@@ -10,6 +10,7 @@ The Readme.md file outlines major steps of the analysis and how scripts are supp
 
 The initial fasta header line:
 >NPY1R_HUMAN/57-320
+
 The renamed fasta header line:
 >PF00001.26 ### NPY1R_HUMAN/57-320
 
