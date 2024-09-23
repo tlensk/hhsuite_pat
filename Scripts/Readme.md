@@ -46,8 +46,12 @@ hhalign -i PT001001.hhm -t PT002001.hhm -o cmp1.hhr
 To analyze similarity between HMMs and\or MSAs, HH-suite3 provides three main opportunities: hhalign, hhsearch, and hhblits.
 The first option (hhalign) is intended to compare two entities, and it does not require using a database.
 The other two options (hhsearch and hhblits) do require creation of a custom database and/or use of the precompiled databases available for download with HH-suite.
-I will demonstrate the creation of a custom database using refGB as an example.
-The refDB is created based on a set of MSAs from our custom Phage Annotation Toolkit (PAT) HMM collection and seed alignments of the most recent release of Pfam HMM collection (Release 37). There are 22,363 MSAs in total. Each HH-suite database contains six files:
+
+> [!TIP]
+For additional examples of creating custom databases using HH-suite3, please see PHROGs<sup>2</sup>. To obtain more detailed information about the process, visit https://phrogs.lmge.uca.fr/ and read the User's Guide: https://phrogs.lmge.uca.fr/manual_phrogs.html.
+
+I will demonstrate the creation of a custom database using __refGB__ as an example.
+The refDB is created based on a set of MSAs from our custom Phage Annotation Toolkit (PAT) HMM collection and seed alignments of the most recent release of Pfam HMM collection (Release 37). There are 22,363 MSAs in total. Each HH-suite database, and __refDB__ is no exception, contains the following six files:
 
 (1) refDB_a3m.ffdata - a joint packed file with the alignments in .a3m format;
 
@@ -111,3 +115,5 @@ hhblits -i PT001001.hhm -d refDB -n 1 -o hhm_results_file
 ### References
 
 [1] Steinegger, M., Meier, M., Mirdita, M., Vöhringer, H., Haunsberger, S. J., & Söding, J. (2019). HH-suite3 for fast remote homology detection and deep protein annotation. BMC bioinformatics, 20, 1-15.
+
+[2] Terzian, P., Olo Ndela, E., Galiez, C., Lossouarn, J., Pérez Bucio, R.E., Mom, R., Toussaint, A., Petit, M.A. and Enault, F. (2021). PHROG: families of prokaryotic virus proteins clustered using remote homology. NAR Genomics and Bioinformatics, 3(3), p.lqab067.
